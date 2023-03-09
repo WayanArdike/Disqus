@@ -7,8 +7,18 @@
     <title>Document</title>
 </head>
 <body>
- <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="nmUyA0Aj"></script>
-    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="340" data-numposts="30"></div>
+ <form action="submit-comment.php" method="post">
+  <label for="name">Nama:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="comment">Komentar:</label>
+  <textarea id="comment" name="comment" required></textarea>
+
+  <button type="submit">Kirim</button>
+</form>
+
 </body>
 </html>
